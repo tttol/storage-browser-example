@@ -1,5 +1,6 @@
-// "use client"
+"use client"
 import { StorageBrowser } from '@aws-amplify/ui-react-storage';
+import "@aws-amplify/ui-react-storage/styles.css";
 
 // these should match access patterns defined in amplify/storage/resource.ts
 const defaultPrefixes = [
@@ -8,7 +9,7 @@ const defaultPrefixes = [
   (identityId: string) => `private/${identityId}/`,
 ];
 
-export default function Storage() {
+export default function DefaultStorageBrowser() {
   return (
     <StorageBrowser defaultPrefixes={defaultPrefixes} />
   )
