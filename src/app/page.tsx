@@ -9,6 +9,9 @@ export default function Home() {
       <p>
         <a href="/dsb">Default Storage Browser</a>
       </p>
+      <p>
+        <a href="/custom">Custom Storage Browser</a>
+      </p>
     </>
   );
 }
