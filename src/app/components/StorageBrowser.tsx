@@ -3,9 +3,10 @@ import {
     createAmplifyAuthAdapter,
     createStorageBrowser,
 } from '@aws-amplify/ui-react-storage/browser';
-import '@aws-amplify/ui-react-storage/storage-browser-styles.css';
+// import '@aws-amplify/ui-react-storage/storage-browser-styles.css';
 import "@aws-amplify/ui-react-storage/styles.css";
-import "@aws-amplify/ui-react/styles.css";
+// import "@aws-amplify/ui-react/styles.css";
+import { elementsDefault } from '@aws-amplify/ui-react-storage/browser';
 import { Amplify } from 'aws-amplify';
 
 Amplify.configure(outputs);
@@ -18,7 +19,7 @@ const defaultPrefixes = [
 ];
 
 export const { StorageBrowser } = createStorageBrowser({
-//   elements: elementsDefault, // replace to customize your UI
+  elements: elementsDefault,
   config: createAmplifyAuthAdapter({
     options: {
       defaultPrefixes
