@@ -1,13 +1,13 @@
 import outputs from "@/../amplify_outputs.json";
 import {
-    createAmplifyAuthAdapter,
-    createStorageBrowser,
+  createAmplifyAuthAdapter,
+  createStorageBrowser,
+  elementsDefault,
 } from '@aws-amplify/ui-react-storage/browser';
-// import '@aws-amplify/ui-react-storage/storage-browser-styles.css';
-import "@aws-amplify/ui-react-storage/styles.css";
-// import "@aws-amplify/ui-react/styles.css";
-import { elementsDefault } from '@aws-amplify/ui-react-storage/browser';
+import "@aws-amplify/ui-react-storage/storage-browser-styles.css";
+import "@aws-amplify/ui-react/styles.css";
 import { Amplify } from 'aws-amplify';
+
 
 Amplify.configure(outputs);
 
